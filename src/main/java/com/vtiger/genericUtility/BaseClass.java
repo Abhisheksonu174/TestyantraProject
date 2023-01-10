@@ -7,6 +7,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 import com.vtiger.objectRepository.CommonPage;
 import com.vtiger.objectRepository.LoginPage;
@@ -80,5 +81,6 @@ public class BaseClass extends BaseClassVariables{
 	public void classTearDown() throws IOException {
 		webDriverUtiltiy.closeBrowser(excelUtility, fileUtility);
 	}
+	
 
 }
